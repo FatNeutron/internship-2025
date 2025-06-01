@@ -43,3 +43,6 @@ HED (howardites, eucrites, and diogenites) meteorites are considered to be origi
 
 
 Vesta is a differentiated asteroid with metallic core, silicate mantle, and basaltic crust.
+
+
+(temp text)
