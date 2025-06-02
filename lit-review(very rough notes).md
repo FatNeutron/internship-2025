@@ -28,6 +28,7 @@ $^{26}\text{Mg}$ is stable isotope.
 $^{26}\text{Al}$(hf ~0.717 myr) & $^{60}\text{Fe}$(hf ~2.6 myr) are important while considering thermal energy.
 
 >$^{26}\text{Al}$ -> $^{26}\text{Mg}$ 
+>
 >$^{60}\text{Fe}$ ->-> $^{60}\text{Ni}$
 
 After the complete decay of Al, to get its presence before decay we use the ratios comparison of $^{26}\text{Mg} / ^{24}\text{Mg}$ and $^{27}\text{Al} / ^{24}\text{Mg}$ in the minerals.
