@@ -52,4 +52,7 @@ Heat released from $^{26}\text{Al}$ decay was enough for partial to extensive me
 ## Modeling
 
 For modelling thermal evolution, 1D radial heat transfer equation was used,
+
+$$
 $\frac{\partial{T}}{\partial{t}} = \frac{1}{R^{2}}\frac{\partial}{\partial{R}}\Big(R^{2} \kappa \frac{\partial{T}}{\partial{R}}\Big) + \frac{Q_{rad}}{\rho c_{v}}$
+$$
