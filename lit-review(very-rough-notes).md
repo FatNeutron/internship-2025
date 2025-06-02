@@ -52,7 +52,7 @@ Heat released from $^{26}\text{Al}$ decay was enough for partial to extensive me
 ## Modeling
 
 
-###### 3D heat equation:
+##### 3D heat equation:
 $$\frac{\partial T}{\partial t} = \frac{\kappa}{\rho c_v} \left[
 \frac{1}{R^2} \frac{\partial}{\partial R} \left( R^2 \frac{\partial T}{\partial R} \right) + \frac{1}{R^2 \sin \theta} \frac{\partial}{\partial \theta} \left( \sin \theta \frac{\partial T}{\partial \theta} \right) + \frac{1}{R^2 \sin^2 \theta} \frac{\partial^2 T}{\partial \phi^2}\right] + \frac{Q_{\text{rad}}}{\rho c_v} $$
 
@@ -60,7 +60,7 @@ For modelling we assume spherical symmetry, which means that there are no angula
 
 So the out equation simplifies to following
 
-###### 1D heat equation:
+##### 1D heat equation:
 $$\frac{\partial{T}}{\partial{t}} = \frac{1}{R^{2}}\frac{\partial}{\partial{R}}\Big(R^{2} \kappa \frac{\partial{T}}{\partial{R}}\Big) + \frac{Q_{rad}}{\rho c_{v}}$$
 
 | Symbol                                                                                              | Meaning                                                                                                                                                  |
@@ -77,7 +77,10 @@ $$\frac{\partial{T}}{\partial{t}} = \frac{1}{R^{2}}\frac{\partial}{\partial{R}}\
 | $c_v$                                                                                               | **Specific heat capacity at constant volume** (J/kg·K) — amount of energy needed to raise the temperature of a unit mass by 1 K                          |
 | $\frac{Q_{\text{rad}}}{\rho c_v}$                                                                   | Temperature increase due to internal heating, normalized per unit mass and heat capacity                                                                 |
 
+###### $Q_{rad}$ term:
+
 $Q_{rad}$ term is the total internal radiogenic heat produced by radioactive isotopes,
+
 $$Q_{\text{rad}} = A_{0,\text{Al}} \cdot Q_{0,\text{Al}} \cdot e^{-\lambda_{\text{Al}} t} + A_{0,\text{Fe}} \cdot Q_{0,\text{Fe}} \cdot e^{-\lambda_{\text{Fe}} t}$$
 
 
