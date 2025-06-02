@@ -77,3 +77,20 @@ $$\frac{\partial{T}}{\partial{t}} = \frac{1}{R^{2}}\frac{\partial}{\partial{R}}\
 | $c_v$                                                                                               | **Specific heat capacity at constant volume** (J/kg·K) — amount of energy needed to raise the temperature of a unit mass by 1 K                          |
 | $\frac{Q_{\text{rad}}}{\rho c_v}$                                                                   | Temperature increase due to internal heating, normalized per unit mass and heat capacity                                                                 |
 
+$Q_{rad}$ term is defined as,
+$$
+Q_{\text{rad}} = A_{0,\text{Al}} \cdot Q_{0,\text{Al}} \cdot e^{-\lambda_{\text{Al}} t} + A_{0,\text{Fe}} \cdot Q_{0,\text{Fe}} \cdot e^{-\lambda_{\text{Fe}} t}
+$$
+where,
+
+| Symbol                | Meaning                                                           |
+| --------------------- | ----------------------------------------------------------------- |
+| $Q_{\text{rad}}$      | Volumetric radiogenic heat production rate at time $ t $(in W/m³) |
+| $A_{0,\text{Al}}$     | Initial abundance of $^{26}\text{Al}$ (atoms per m³ or kg)        |
+| $Q_{0,\text{Al}}$     | Energy released per decay of $^{26}\text{Al}$ (in joules)         |
+| $\lambda_{\text{Al}}$ | Decay constant of $^{26}\text{Al}$, related to its half-life      |
+| $A_{0,\text{Fe}}$     | Initial abundance of $^{60}\text{Fe}$                             |
+| $Q_{0,\text{Fe}}$     | Energy released per decay of $^{60}\text{Fe}$                     |
+| $\lambda_{\text{Fe}}$ | Decay constant of $^{60}\text{Fe}$                                |
+| $t$                   | Time since the start of the solar system (in years or seconds)    |
+| $e^{-\lambda t}$      | Exponential decay factor for radioactive nuclides                 |
