@@ -77,10 +77,9 @@ $$\frac{\partial{T}}{\partial{t}} = \frac{1}{R^{2}}\frac{\partial}{\partial{R}}\
 | $c_v$                                                                                               | **Specific heat capacity at constant volume** (J/kg·K) — amount of energy needed to raise the temperature of a unit mass by 1 K                          |
 | $\frac{Q_{\text{rad}}}{\rho c_v}$                                                                   | Temperature increase due to internal heating, normalized per unit mass and heat capacity                                                                 |
 
-$Q_{rad}$ term is defined as,
+$Q_{rad}$ term is the total internal radiogenic heat produced by radioactive isotopes,
 $$Q_{\text{rad}} = A_{0,\text{Al}} \cdot Q_{0,\text{Al}} \cdot e^{-\lambda_{\text{Al}} t} + A_{0,\text{Fe}} \cdot Q_{0,\text{Fe}} \cdot e^{-\lambda_{\text{Fe}} t}$$
 
-where,
 
 | Symbol                | Meaning                                                           |
 | --------------------- | ----------------------------------------------------------------- |
