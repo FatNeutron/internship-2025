@@ -38,9 +38,20 @@ $^{26}\text{Al}$ is for quick heating(relatively speaking, it was imp as it was 
 
 ## Vesta
 
-Formed just after few myr after the solar system formation with rapid accretion.
+Vesta is a differentiated asteroid with metallic core, silicate mantle, and basaltic crust.
+
+radius ~270 Km
+
+Formed just after few myr after the solar system formation with rapid accretion.(within 1-2 myr after [CAIs](https://en.wikipedia.org/wiki/Calcium%E2%80%93aluminium-rich_inclusion))
 
 HED (howardites, eucrites, and diogenites) meteorites are considered to be originated from Vesta. Diogenites are derived from the lower crust or upper mantle, eucrites comes from basaltic surface flows or shallow intrusions.
 
+Heat released from $^{26}\text{Al}$ decay was enough for partial to extensive melting which lead to the formation of core(metallic iron towards center & silicate mantle and crust).
 
-Vesta is a differentiated asteroid with metallic core, silicate mantle, and basaltic crust.
+
+## Modeling
+
+For modelling thermal evolution, 1D radial heat transfer equation was used,
+$$
+\frac{\partial{T}}{\partial{t}} = \frac{1}{R^{2}}\frac{\partial}{\partial{R}}\Big(R^{2} \kappa \frac{\partial{T}}{\partial{R}}\Big) + \frac{Q_{rad}}{\rho c_{v}}
+$$
