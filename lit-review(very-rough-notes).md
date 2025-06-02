@@ -60,7 +60,7 @@ For modelling we assume spherical symmetry, which means that there are no angula
 
 So the out equation simplifies to following
 
-> [!NOTE] 1D heat equation 
+> [!1D heat equation]  
 >$$\frac{\partial{T}}{\partial{t}} = \frac{1}{R^{2}}\frac{\partial}{\partial{R}}\Big(R^{2} \kappa \frac{\partial{T}}{\partial{R}}\Big) + \frac{Q_{rad}}{\rho c_{v}}$$
 
 | Symbol                                                                                                  | Meaning                                                                                                                                                      |
