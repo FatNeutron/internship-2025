@@ -19,7 +19,7 @@
 --------------
 
 
-## Isotopes
+## Imp Isotopes
 
 $^{27}\text{Al}$ is stable, and $^{26}\text{Al}$ is radioactive isotope.
 $^{24}\text{Mg}$ is most abundant stable.
