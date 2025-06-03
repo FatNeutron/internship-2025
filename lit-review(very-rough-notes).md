@@ -1,4 +1,7 @@
 
+%% This file was written in obsidian and synced in github %%
+
+
 **Things to do:** 
 
 - [x] read thesis by Shehzade Manzoor Khan.
