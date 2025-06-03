@@ -44,12 +44,12 @@ radius ~270 Km
 
 Formed just after few myr after the solar system formation with rapid accretion.(within 1-2 myr after [CAIs](https://en.wikipedia.org/wiki/Calcium%E2%80%93aluminium-rich_inclusion))
 
-HED (howardites, eucrites, and diogenites) meteorites are considered to be originated from Vesta. Diogenites are derived from the lower crust or upper mantle, eucrites comes from basaltic surface flows or shallow intrusions.
+[HED meteorites](https://en.wikipedia.org/wiki/HED_meteorite) (howardites, eucrites, and diogenites) are considered to be originated from Vesta. Diogenites are derived from the lower crust or upper mantle, eucrites comes from basaltic surface flows or shallow intrusions.
 
 Heat released from $^{26}\text{Al}$ decay was enough for partial to extensive melting which lead to the formation of core(metallic iron towards center & silicate mantle and crust).
 
 
-## Modeling
+## Modeling Equation
 
 
 ##### 3D heat equation:
@@ -84,14 +84,18 @@ $Q_{rad}$ term is the total internal radiogenic heat produced by radioactive iso
 $$Q_{\text{rad}} = A_{0,\text{Al}} \cdot Q_{0,\text{Al}} \cdot e^{-\lambda_{\text{Al}} t} + A_{0,\text{Fe}} \cdot Q_{0,\text{Fe}} \cdot e^{-\lambda_{\text{Fe}} t}$$
 
 
-| Symbol                | Meaning                                                           |
-| --------------------- | ----------------------------------------------------------------- |
-| $Q_{\text{rad}}$      | Volumetric radiogenic heat production rate at time $ t $(in W/m³) |
-| $A_{0,\text{Al}}$     | Initial abundance of $^{26}\text{Al}$ (atoms per m³ or kg)        |
-| $Q_{0,\text{Al}}$     | Energy released per decay of $^{26}\text{Al}$ (in joules)         |
-| $\lambda_{\text{Al}}$ | Decay constant of $^{26}\text{Al}$, related to its half-life      |
-| $A_{0,\text{Fe}}$     | Initial abundance of $^{60}\text{Fe}$                             |
-| $Q_{0,\text{Fe}}$     | Energy released per decay of $^{60}\text{Fe}$                     |
-| $\lambda_{\text{Fe}}$ | Decay constant of $^{60}\text{Fe}$                                |
-| $t$                   | Time since the start of the solar system (in years or seconds)    |
-| $e^{-\lambda t}$      | Exponential decay factor for radioactive nuclides                 |
+| Symbol                | Meaning                                                          |
+| --------------------- | ---------------------------------------------------------------- |
+| $Q_{\text{rad}}$      | Volumetric radiogenic heat production rate at time $t$ (in W/m³) |
+| $A_{0,\text{Al}}$     | Initial abundance of $^{26}\text{Al}$ (atoms per m³ or kg)       |
+| $Q_{0,\text{Al}}$     | Energy released per decay of $^{26}\text{Al}$ (in joules)        |
+| $\lambda_{\text{Al}}$ | Decay constant of $^{26}\text{Al}$, related to its half-life     |
+| $A_{0,\text{Fe}}$     | Initial abundance of $^{60}\text{Fe}$                            |
+| $Q_{0,\text{Fe}}$     | Energy released per decay of $^{60}\text{Fe}$                    |
+| $\lambda_{\text{Fe}}$ | Decay constant of $^{60}\text{Fe}$                               |
+| $t$                   | Time since the start of the solar system (in years or seconds)   |
+| $e^{-\lambda t}$      | Exponential decay factor for radioactive nuclides                |
+
+
+## Modelling Methods
+
