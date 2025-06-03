@@ -1,5 +1,6 @@
 
-%% This file was written in obsidian and synced in github %%
+> [!NOTE]
+> This file was written in obsidian and synced through github, so some format may not load properly!!!
 
 
 **Things to do:** 
