@@ -47,11 +47,11 @@ radius ~270 Km
 
 Formed just after few myr of the solar system formation with rapid accretion. From the [[ghosh_mcsween_1998_maps_vesta_thermal_model (2).pdf|paper by Amitabha Ghosh and Harry Y. McSween, Jr.]], the predicted times are relative [CAIs](https://en.wikipedia.org/wiki/Calcium%E2%80%93aluminium-rich_inclusion) formation and are given as,
 
-> accretion at 2.85 Myr
+> ==accretion at 2.85 Myr==
 > 
-> core formation at 4.58 Myr
+> ==core formation at 4.58 Myr==
 > 
-> crust formation at 6.58 Myr
+> ==crust formation at 6.58 Myr==
 
 
 [HED meteorites](https://en.wikipedia.org/wiki/HED_meteorite) (howardites, eucrites, and diogenites) are considered to be originated from Vesta. Diogenites are derived from the lower crust or upper mantle, eucrites comes from basaltic surface flows or shallow intrusions.
