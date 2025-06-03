@@ -3,7 +3,10 @@
 
 - [x] read thesis by Shehzade Manzoor Khan.
 	- [ ] learn the methods used.
+		- [x] Crank-Nicolson method.
+		- [ ] Method of lines.
 - [ ] read paper by Amitabha Ghosh.
+- [ ] Write code for modelling thermal evolution.
 
 -------------
 # Thesis notes
@@ -101,4 +104,3 @@ $$Q_{\text{rad}} = A_{0,\text{Al}} \cdot Q_{0,\text{Al}} \cdot e^{-\lambda_{\tex
 
 ### Crank-Nicolson method 
 
-a
