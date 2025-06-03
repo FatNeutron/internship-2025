@@ -45,7 +45,12 @@ Vesta is a differentiated asteroid with metallic core, silicate mantle, and basa
 
 radius ~270 Km
 
-Formed just after few myr after the solar system formation with rapid accretion.(within 1-2 myr after [CAIs](https://en.wikipedia.org/wiki/Calcium%E2%80%93aluminium-rich_inclusion))
+Formed just after few myr of the solar system formation with rapid accretion. From the [[ghosh_mcsween_1998_maps_vesta_thermal_model (2).pdf|paper by Amitabha Ghosh and Harry Y. McSween, Jr.]], the predicted times are relative [CAIs](https://en.wikipedia.org/wiki/Calcium%E2%80%93aluminium-rich_inclusion) formation and are given as,
+
+> accretion at 2.85 Myr
+> core formation at 4.58 Myr
+> crust formation at 6.58 Myr
+
 
 [HED meteorites](https://en.wikipedia.org/wiki/HED_meteorite) (howardites, eucrites, and diogenites) are considered to be originated from Vesta. Diogenites are derived from the lower crust or upper mantle, eucrites comes from basaltic surface flows or shallow intrusions.
 
@@ -104,3 +109,4 @@ $$Q_{\text{rad}} = A_{0,\text{Al}} \cdot Q_{0,\text{Al}} \cdot e^{-\lambda_{\tex
 
 ### Crank-Nicolson method 
 
+[^1]: 
