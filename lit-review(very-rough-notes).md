@@ -134,15 +134,19 @@ r_{i} = i\Delta{r}, \quad i = 0,1,2,\dots,N.
 $$
 
 We partition the time domain into steps of size $(\Delta{t})$, so
+
 $$
 t^{n} = n\Delta{t}, \quad n = 0,1,2,\dots
 $$
+
 
 > [!Notation] 
 > Note that here we $t^{n}$ doesn't mean t raised to $n$th power. It is just an index notation like $r_{n}$.
 > For convenience we use superscript for index in time domain and subscript for index in spatial domain.
 > 
-> Ex., $$T^{n}_{i} = T(r_{i}, t^{n})$$ 
+> Ex., 
+> 
+> $$T^{n}_{i} = T(r_{i}, t^{n})$$ 
 
 
 #### Discretize the time derivative
