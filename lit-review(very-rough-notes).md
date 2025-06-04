@@ -149,10 +149,6 @@ $$
 We need to approximate the time derivative by a forward difference:
 
 $$
-t^{n} = n\Delta{t}, \quad n = 0,1,2,\dots
-$$
-
-$$
 \frac{\partial{T}}{\partial{t}}(r_{i},t^{n}) \approx \frac{T^{n+1}_{i} - T^{n}_{i}}{\Delta{t}}
 $$
 
@@ -192,6 +188,9 @@ T^{n+1}_{i} - T^{n}_{i} = \frac{\Delta{t} \kappa}{2r_{i}\Delta{r}} (T^{n}_{i+1} 
 \boxed{T^{n+1}_{i}(1 + 2 \alpha) + T^{n+1}_{i+1}(- \alpha - \beta_{i}) + T^{n+1}_{i-1}(\beta_{i} - \alpha) = T^{n}_{i}(1 - 2 \alpha) + T^{n}_{i+1}(\alpha + \beta_{i}) + T^{n}_{i-1}(\alpha - \beta_{i}) + S\Delta{t}}
 \end{gather*}
 $$
+
 This equations can be defined in tridigonal linear system,
+
 $$AT^{n+1} = BT^{n} + C$$
+
 which further can be solved some algorithms like Thomas algorithm.
