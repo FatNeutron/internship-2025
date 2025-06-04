@@ -128,9 +128,11 @@ $$\boxed{\frac{\partial{T}}{\partial{t}} = \Big(\frac{2\kappa}{R}\frac{\partial{
 
 
 We consider the 1D heat equation in spherical coordinates on $([0,L])$. We partition the spatial domain into $(N)$ intervals of width $(\Delta{r} = \frac{L}{N})$, so
+
 $$
 r_{i} = i\Delta{r}, \quad i = 0,1,2,\dots,N.
 $$
+
 We partition the time domain into steps of size $(\Delta{t})$, so
 $$
 t^{n} = n\Delta{t}, \quad n = 0,1,2,\dots
