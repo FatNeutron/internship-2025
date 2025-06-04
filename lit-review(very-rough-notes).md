@@ -148,7 +148,11 @@ $$
 
 We need to approximate the time derivative by a forward difference:
 
-$$\frac{\partial{T}}{\partial{t}}(r_{i},t^{n}) \approx \frac{T^{n+1}_{i} - T^{n}_{i}}{\Delta{t}}$$
+
+$$
+\frac{\partial{T}}{\partial{t}}(r_{i},t^{n}) \approx \frac{T^{n+1}_{i} - T^{n}_{i}}{\Delta{t}}
+$$
+
 
 #### Discretize the space derivative
 
