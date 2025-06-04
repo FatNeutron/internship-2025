@@ -141,7 +141,7 @@ $$
 
 
 > [!Notation] 
-> Note that here we $t^{n}$ doesn't mean t raised to $n$th power. It is just an index notation like $r_{n}$.
+> Note that here we $t^{n}$ doesn't mean t raised to $n$ th power. It is just an index notation like $r_{n}$.
 > For convenience we use superscript for index in time domain and subscript for index in spatial domain.
 > 
 > Ex., 
