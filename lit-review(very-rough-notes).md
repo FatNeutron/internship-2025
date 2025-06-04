@@ -1,6 +1,8 @@
 
 > [!NOTE]
-> This file was written in obsidian and synced through github, so some format may not load properly!!!
+> This file was written in obsidian and synced through GitHub, so some format may not load properly!!!
+> 
+> **GitHub app** does not load the format properly!!!
 
 
 **Things to do:** 
@@ -29,7 +31,7 @@
 ## Imp Isotopes
 
 $^{27}\text{Al}$ is stable, and $^{26}\text{Al}$ is radioactive isotope.
-$^{24}\text{Mg}$ is most abundant stable.
+$^{24}\text{Mg}$ is most abundant & stable.
 $^{26}\text{Mg}$ is stable isotope.
 
 $^{26}\text{Al}$(hf ~0.717 myr) & $^{60}\text{Fe}$(hf ~2.6 myr) are important while considering thermal energy.
@@ -86,7 +88,7 @@ $$\frac{\partial{T}}{\partial{t}} = \frac{1}{R^{2}}\frac{\partial}{\partial{R}}\
 | $\kappa(R, T)$                                                                                      | **Thermal conductivity** (W/m·K) — may depend on radius or temperature                                                                                   |
 | $\frac{\partial T}{\partial R}$                                                                     | Radial temperature gradient (how temperature changes with depth)                                                                                         |
 | $\frac{1}{R^2} \frac{\partial}{\partial R} \left( R^2 \kappa \frac{\partial T}{\partial R} \right)$ | **Radial heat conduction term** — accounts for heat flowing in/out of a spherical shell at radius $R$, including the increasing surface area with radius |
-| $Q_{\text{rad}}$                                                                                    | **Volumetric internal heat production rate** (W/m³), e.g., from radioactive decay of U, Th, K in planetary mantles                                       |
+| $Q_{\text{rad}}$                                                                                    | **Volumetric internal heat production rate** (W/m³), e.g., from radioactive decay                                                                        |
 | $\rho$                                                                                              | Density of the material (kg/m³)                                                                                                                          |
 | $c_v$                                                                                               | **Specific heat capacity at constant volume** (J/kg·K) — amount of energy needed to raise the temperature of a unit mass by 1 K                          |
 | $\frac{Q_{\text{rad}}}{\rho c_v}$                                                                   | Temperature increase due to internal heating, normalized per unit mass and heat capacity                                                                 |
@@ -115,4 +117,3 @@ $$Q_{\text{rad}} = A_{0,\text{Al}} \cdot Q_{0,\text{Al}} \cdot e^{-\lambda_{\tex
 
 ### Crank-Nicolson method 
 
-[^1]: 
