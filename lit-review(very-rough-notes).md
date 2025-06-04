@@ -144,7 +144,7 @@ $$
 
 #### Discretize the time derivative
 
-We need to approximate the time derivative by a forward difference:
+We need to approximate the time derivative by a forward difference
 
 $$
 \frac{\partial{T}}{\partial{t}}(r_{i},t^{n}) \approx \frac{T^{n+1}_{i} - T^{n}_{i}}{\Delta{t}}
