@@ -145,6 +145,7 @@ $$
 > For convenience we use superscript for index in time domain and subscript for index in spatial domain.
 > 
 > Ex.,  $\quad T^{n}_{i} = T(r_{i}, t^{n})$
+> 
 
 
 #### Discretize the time derivative
