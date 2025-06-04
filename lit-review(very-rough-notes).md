@@ -146,7 +146,7 @@ $$
 > 
 > Ex., 
 > 
-> $$T^{n}_{i} = T(r_{i}, t^{n})$$ 
+> 	$$T^{n}_{i} = T(r_{i}, t^{n})$$ 
 
 
 #### Discretize the time derivative
