@@ -143,27 +143,28 @@ $$
 > [!Note] 
 > Note that here we $t^{n}$ doesn't mean t raised to $n$ th power. It is just an index notation like $r_{n}$.
 > For convenience we use superscript for index in time domain and subscript for index in spatial domain.
-> 
-> Ex.,  $\quad T^{n}_{i} = T(r_{i}, t^{n})$
-> 
-
 
 #### Discretize the time derivative
 
 We need to approximate the time derivative by a forward difference:
+
 $$\frac{\partial{T}}{\partial{t}}(r_{i},t^{n}) \approx \frac{T^{n+1}_{i} - T^{n}_{i}}{\Delta{t}}$$
 
 #### Discretize the space derivative
 
 Then we approximate the second spatial derivative by central difference:
+
 $$\frac{\partial^2{T}}{\partial{r^2}}(r_{i},t^{n}) \approx \frac{T^{n}_{i+1} +T^{n}_{i-1} - 2T^{n}_{i}}{(\Delta{r})^2}$$
 And first spatial derivative by backward difference:
+
 $$\frac{\partial{T}}{\partial{r}}(r_{i},t^{n}) \approx \frac{T^{n}_{i+1} - T^{n}_{i-1}}{2\Delta{r}}$$
 
 #### Crank–Nicolson: Averaging Explicit and Implicit
 
 Crank-Nicolos is formed by averaging the spatial derivatives terms at time $(n)$(called explicit) and $(n+1)$(called implicit). So the form of equation will look like this,
+
 $$\frac{T^{n+1}_{i} - T^{n}_{i}}{\Delta{t}} = \kappa \Big(\frac{\text{(Spatial terms)}^{n} + \text{(Spatial terms)}^{n+1}}{2}\Big) + S$$
+
 Substituting terms in this equation for spatial terms,
 
 $$
