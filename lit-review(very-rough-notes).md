@@ -139,6 +139,10 @@ $$
 t^{n} = n\Delta{t}, \quad n = 0,1,2,\dots
 $$
 
+$$
+\frac{\partial{T}}{\partial{t}}(r_{i},t^{n}) \approx \frac{T^{n+1}_{i} - T^{n}_{i}}{\Delta{t}}
+$$
+
 
 > [!Note] 
 > Note that here we $t^{n}$ doesn't mean t raised to $n$ th power. It is just an index notation like $r_{n}$.
