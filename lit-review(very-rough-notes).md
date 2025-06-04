@@ -74,7 +74,7 @@ $$\frac{\partial T}{\partial t} = \frac{\kappa}{\rho c_v} \left[
 
 For modelling we assume spherical symmetry, which means that there are no angular dependencies so the angular terms become 0.
 
-So the our equation simplifies to following 1D heat equation,
+So our equation simplifies to following 1D heat equation,
 
 ##### 1D heat equation:
 $$\frac{\partial{T}}{\partial{t}} = \frac{1}{R^{2}}\frac{\partial}{\partial{R}}\Big(R^{2} \kappa \frac{\partial{T}}{\partial{R}}\Big) + \frac{Q_{rad}}{\rho c_{v}}$$
@@ -115,5 +115,70 @@ $$Q_{\text{rad}} = A_{0,\text{Al}} \cdot Q_{0,\text{Al}} \cdot e^{-\lambda_{\tex
 
 ## Modelling Methods
 
+We have our heat equation as,
+$$
+\frac{\partial{T}}{\partial{t}} = \frac{1}{R^{2}}\frac{\partial}{\partial{R}}\Big(R^{2} \kappa \frac{\partial{T}}{\partial{R}}\Big) + \frac{Q_{rad}}{\rho c_{v}}$$
+
+Let,$\quad S = \frac{Q_{rad}}{\rho c_{v}}$
+
+$$\boxed{\frac{\partial{T}}{\partial{t}} = \Big(\frac{2\kappa}{R}\frac{\partial{T}}{\partial{r}} + \kappa \frac{\partial^2{T}}{\partial{r^2}}\Big) + S}$$
+
+
 ### Crank-Nicolson method 
 
+
+We consider the 1D heat equation in spherical coordinates on $([0,L])$. We partition the spatial domain into $(N)$ intervals of width $(\Delta{r} = \frac{L}{N})$, so
+$$
+r_{i} = i\Delta{r}, \quad i = 0,1,2,\dots,N.
+$$
+We partition the time domain into steps of size $(\Delta{t})$, so
+$$
+t^{n} = n\Delta{t}, \quad n = 0,1,2,\dots
+$$
+
+> [!Notation] 
+> Note that here we $t^{n}$ doesn't mean t raised to $n$th power. It is just an index notation like $r_{n}$.
+> For convenience we use superscript for index in time domain and subscript for index in spatial domain.
+> 
+> Ex., $$T^{n}_{i} = T(r_{i}, t^{n})$$ 
+
+
+#### Discretize the time derivative
+
+We need to approximate the time derivative by a forward difference:
+$$\frac{\partial{T}}{\partial{t}}(r_{i},t^{n}) \approx \frac{T^{n+1}_{i} - T^{n}_{i}}{\Delta{t}}$$
+
+#### Discretize the space derivative
+
+Then we approximate the second spatial derivative by central difference:
+$$\frac{\partial^2{T}}{\partial{r^2}}(r_{i},t^{n}) \approx \frac{T^{n}_{i+1} +T^{n}_{i-1} - 2T^{n}_{i}}{(\Delta{r})^2}$$
+And first spatial derivative by backward difference:
+$$\frac{\partial{T}}{\partial{r}}(r_{i},t^{n}) \approx \frac{T^{n}_{i+1} - T^{n}_{i-1}}{2\Delta{r}}$$
+
+#### Crank–Nicolson: Averaging Explicit and Implicit
+
+Crank-Nicolos is formed by averaging the spatial derivatives terms at time $(n)$(called explicit) and $(n+1)$(called implicit). So the form of equation will look like this,
+$$\frac{T^{n+1}_{i} - T^{n}_{i}}{\Delta{t}} = \kappa \Big(\frac{\text{(Spatial terms)}^{n} + \text{(Spatial terms)}^{n+1}}{2}\Big) + S$$
+Substituting terms in this equation for spatial terms,
+
+$$
+\begin{gather*}
+
+\frac{T^{n+1}_{i} - T^{n}_{i}}{\Delta{t}} = \kappa \Big[ \frac{\frac{2}{r_{i}}\Big(\frac{T^{n}_{i+1} - T^{n}_{i-1}}{2\Delta{r}} \Big) + \Big( \frac{T^{n}_{i+1} +T^{n}_{i-1} - 2T^{n}_{i}}{(\Delta{r})^2}\Big) + \frac{2}{r_{i}}\Big(\frac{T^{n+1}_{i+1} - T^{n+1}_{i-1}}{2\Delta{r}} \Big) + \Big( \frac{T^{n+1}_{i+1} +T^{n+1}_{i-1} - 2T^{n+1}_{i}}{(\Delta{r})^2}\Big)}{2}  \Big] + S
+\\\\
+
+T^{n+1}_{i} - T^{n}_{i} = \Delta{t} \kappa \Big[ \frac{\frac{2}{r_{i}}\Big(\frac{T^{n}_{i+1} - T^{n}_{i-1}}{2\Delta{r}} \Big) + \Big( \frac{T^{n}_{i+1} +T^{n}_{i-1} - 2T^{n}_{i}}{(\Delta{r})^2}\Big) + \frac{2}{r_{i}}\Big(\frac{T^{n+1}_{i+1} - T^{n+1}_{i-1}}{2\Delta{r}} \Big) + \Big( \frac{T^{n+1}_{i+1} +T^{n+1}_{i-1} - 2T^{n+1}_{i}}{(\Delta{r})^2}\Big)}{2}  \Big] + S\Delta{t}
+\\\\
+
+T^{n+1}_{i} - T^{n}_{i} = \frac{\Delta{t} \kappa}{2r_{i}\Delta{r}} (T^{n}_{i+1} - T^{n}_{i-1}) + \frac{\Delta{t} \kappa}{2(\Delta{r})^{2}}(T^{n}_{i+1} + T^{n}_{i-1} -2T^{n}_{i}) + \frac{\Delta{t} \kappa}{2r_{i}\Delta{r}} (T^{n+1}_{i+1} - T^{n+1}_{i-1}) + \frac{\Delta{t} \kappa}{2(\Delta{r})^{2}}(T^{n+1}_{i+1} + T^{n+1}_{i-1} -2T^{n+1}_{i} + S\Delta{t}
+\\\\
+
+\text{let,} \quad \alpha = \frac{\Delta{t} \kappa}{2(\Delta{r})^2}, \quad \text{and} \quad \beta_{i} = \frac{\Delta{t} \kappa}{2r_{i} \Delta{r}}
+\\\\
+
+\boxed{T^{n+1}_{i}(1 + 2 \alpha) + T^{n+1}_{i+1}(- \alpha - \beta_{i}) + T^{n+1}_{i-1}(\beta_{i} - \alpha) = T^{n}_{i}(1 - 2 \alpha) + T^{n}_{i+1}(\alpha + \beta_{i}) + T^{n}_{i-1}(\alpha - \beta_{i}) + S\Delta{t}}
+\end{gather*}
+$$
+This equations can be defined in tridigonal linear system,
+$$AT^{n+1} = BT^{n} + C$$
+which further can be solved some algorithms like Thomas algorithm.
