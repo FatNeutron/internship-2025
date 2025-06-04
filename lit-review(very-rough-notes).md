@@ -148,6 +148,9 @@ $$
 
 We need to approximate the time derivative by a forward difference:
 
+$$
+t^{n} = n\Delta{t}, \quad n = 0,1,2,\dots
+$$
 
 $$
 \frac{\partial{T}}{\partial{t}}(r_{i},t^{n}) \approx \frac{T^{n+1}_{i} - T^{n}_{i}}{\Delta{t}}
