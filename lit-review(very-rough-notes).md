@@ -226,7 +226,7 @@ $$
 We discretize the spatial terms with central difference and backward difference equation and substitute in the 1D heat equation, then we have,
 
 $$
-\boxed{\frac{dT_{i}}{dt} = \kappa \Big[\frac{T_{i+1} + T_{i-1} - 2T_{i}}{(\Delta{r})^{2}} + \frac{2}{r_{i}}\Big(\frac{T_{i+1} - T_{i - 1}}{2(\Delta{r})}\Big)\Big] + S_{i}} \quad for \quad i=[1,N-1]
+\boxed{\frac{dT_{i}}{dt} = \kappa \Big[\frac{T_{i+1} + T_{i-1} - 2T_{i}}{(\Delta{r})^{2}} + \frac{2}{r_{i}}\Big(\frac{T_{i+1} - T_{i - 1}}{2(\Delta{r})}\Big)\Big] + S_{i} \quad for \quad i=[1,N-1]}
 $$
 
 
