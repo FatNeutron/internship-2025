@@ -290,7 +290,7 @@ here we consider the heat loss from surface is due to radiative boundary conditi
 
 
 $$
-\frac{\partial{T}}{\partial{r}}\Big|_{r = R} = 0
+\frac{\partial{T}}{\partial{r}}\Big|_{r = R} = \frac{}{}
 $$
 
 
