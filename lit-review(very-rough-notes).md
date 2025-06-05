@@ -117,7 +117,7 @@ $$Q_{\text{rad}} = A_{0,\text{Al}} \cdot Q_{0,\text{Al}} \cdot e^{-\lambda_{\tex
 
 We have our heat equation as,
 
-$$\frac{\partial{T}}{\partial{t}} = \frac{1}{R^{2}}\frac{\partial}{\partial{R}}\Big(R^{2} \kappa \frac{\partial{T}}{\partial{R}}\Big) + \frac{Q_{rad}}{\rho c_{v}}$$
+$$\frac{\partial{T}}{\partial{t}} = \frac{1}{R^{2}}\frac{\partial}{\partial{R}}\Big(R^{2} \kappa \frac{\partial{T}}{\partial{R}}\Big) + \frac{Q_{rad}}{\rho c_{v}}, \quad 0 < r < R, \quad t > 0.$$
 
 Let,   $\quad S = \frac{Q_{rad}}{\rho c_{v}}$
 
@@ -127,7 +127,7 @@ $$\boxed{\frac{\partial{T}}{\partial{t}} = \Big(\frac{2\kappa}{R}\frac{\partial{
 ### Crank-Nicolson method 
 
 
-We consider the 1D heat equation in spherical coordinates on $([0,L])$. We partition the spatial domain into $(N)$ intervals of width $(\Delta{r} = \frac{L}{N})$, so
+We consider the 1D heat equation in spherical coordinates on $([0,R])$. We partition the spatial domain into $(N)$ intervals of width $(\Delta{r} = \frac{R}{N})$, so
 
 $$
 r_{i} = i\Delta{r}, \quad i = 0,1,2,\dots,N.
