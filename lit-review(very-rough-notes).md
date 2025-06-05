@@ -176,19 +176,19 @@ $$
 $$
 
 $$
-\begin{gather*}
-
 T_{i}^{n+1} - T_{i}^{n} = \Delta{t} \kappa \Big[ \frac{\frac{2}{r_{i}}\Big(\frac{T_{i+1}^{n} - T_{i-1}^{n}}{2\Delta{r}} \Big) + \Big( \frac{T_{i+1}^{n} +T_{i-1}^{n} - 2T_{i}^{n}}{(\Delta{r})^2}\Big) + \frac{2}{r_{i}}\Big(\frac{T_{i+1}^{n+1} - T_{i-1}^{n+1}}{2\Delta{r}} \Big) + \Big( \frac{T_{i+1}^{n+1} +T_{i-1}^{n+1} - 2T_{i}^{n+1}}{(\Delta{r})^2}\Big)}{2}  \Big] + S\Delta{t}
-\\\\
+$$
 
+$$
 T_{i}^{n+1} - T_{i}^{n} = \frac{\Delta{t} \kappa}{2r_{i}\Delta{r}} (T_{i+1}^{n} - T_{i-1}^{n}) + \frac{\Delta{t} \kappa}{2(\Delta{r})^{2}}(T_{i+1}^{n} + T_{i-1}^{n} -2T_{i}^{n}) + \frac{\Delta{t} \kappa}{2r_{i}\Delta{r}} (T_{i+1}^{n+1} - T_{i-1}^{n+1}) + \frac{\Delta{t} \kappa}{2(\Delta{r})^{2}}(T_{i+1}^{n+1} + T_{i-1}^{n+1} -2T_{i}^{n+1} + S\Delta{t}
-\\\\
+$$
 
+$$
 \text{let,} \quad \alpha = \frac{\Delta{t} \kappa}{2(\Delta{r})^2}, \quad \text{and} \quad \beta_{i} = \frac{\Delta{t} \kappa}{2r_{i} \Delta{r}}
-\\\\
+$$
 
+$$
 \boxed{T_{i}^{n+1}(1 + 2 \alpha) + T_{i+1}^{n+1}(- \alpha - \beta_{i}) + T_{i-1}^{n+1}(\beta_{i} - \alpha) = T_{i}^{n}(1 - 2 \alpha) + T_{i+1}^{n}(\alpha + \beta_{i}) + T_{i-1}^{n}(\alpha - \beta_{i}) + S\Delta{t}}
-\end{gather*}
 $$
 
 This equations can be defined in tridigonal linear system,
