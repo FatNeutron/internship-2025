@@ -161,13 +161,13 @@ $$\frac{\partial^2{T}}{\partial{r^2}}(r_{i},t^{n}) \approx \frac{T_{i+1}^{n} + T
 
 And first spatial derivative by backward difference:
 
-$$\frac{\partial{T}}{\partial{r}}(r_{i},t^{n}) \approx \frac{T^{n}_{i+1} - T^{n}_{i-1}}{2\Delta{r}}$$
+$$\frac{\partial{T}}{\partial{r}}(r_{i},t^{n}) \approx \frac{T_{i+1}^{n} - T_{i-1}^{n}}{2\Delta{r}}$$
 
 #### Crank–Nicolson: Averaging Explicit and Implicit
 
 Crank-Nicolos is formed by averaging the spatial derivatives terms at time $(n)$(called explicit) and $(n+1)$(called implicit). So the form of equation will look like this,
 
-$$\frac{T^{n+1}_{i} - T^{n}_{i}}{\Delta{t}} = \kappa \Big(\frac{\text{(Spatial terms)}^{n} + \text{(Spatial terms)}^{n+1}}{2}\Big) + S$$
+$$\frac{T_{i}^{n+1} - T_{i}^{n}}{\Delta{t}} = \kappa \Big(\frac{\text{(Spatial terms)}^{n} + \text{(Spatial terms)}^{n+1}}{2}\Big) + S$$
 
 Substituting terms in this equation for spatial terms,
 
