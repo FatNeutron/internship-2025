@@ -157,7 +157,8 @@ $$
 
 Then we approximate the second spatial derivative by central difference:
 
-$$\frac{\partial^2{T}}{\partial{r^2}}(r_{i},t^{n}) \approx \frac{T^{n}_{i+1} +T^{n}_{i-1} - 2T^{n}_{i}}{(\Delta{r})^2}$$
+$$\frac{\partial^2{T}}{\partial{r^2}}(r_{i},t^{n}) \approx \frac{T_{i+1}^{n} + T_{i-1}^{n} - 2T_{i}^{n}}{(\Delta{r})^2}$$
+
 And first spatial derivative by backward difference:
 
 $$\frac{\partial{T}}{\partial{r}}(r_{i},t^{n}) \approx \frac{T^{n}_{i+1} - T^{n}_{i-1}}{2\Delta{r}}$$
