@@ -236,7 +236,7 @@ $$
 Since our heat equation is,
 
 $$
-\frac{\partial{T}}{\partial{t}} = \Big(\frac{2\kappa}{r}\frac{\partial{T}}{\partial{r}} + \kappa \frac{\partial^2{T}}{\partial{r^2}}\Big) + S
+\frac{\partial{T}}{\partial{t}} = \Big(\frac{2\kappa}{r}\frac{\partial{T}}{\partial{r}} + \kappa \frac{\partial^2{T}}{\partial{r^2}}\Big) + S_{i}
 $$
 
 and at $r = 0$ first spatial derivative term is undefined.
@@ -267,21 +267,21 @@ $$
 Substitute this term back in heat equation,
 
 $$
-\frac{\partial{T}}{\partial{t}} = \Big(2\kappa\frac{\partial^2{T}}{\partial{r^2}} + \kappa \frac{\partial^2{T}}{\partial{r^2}}\Big) + S
+\frac{\partial{T}}{\partial{t}} = \Big(2\kappa\frac{\partial^2{T}}{\partial{r^2}} + \kappa \frac{\partial^2{T}}{\partial{r^2}}\Big) + S_{0}
 $$
 
 $$
-= \frac{\partial{T}}{\partial{t}} = \Big(3\kappa\frac{\partial^2{T}}{\partial{r^2}}\Big) + S
+= \frac{\partial{T}}{\partial{t}} = \Big(3\kappa\frac{\partial^2{T}}{\partial{r^2}}\Big) + S_{0}
 $$
 
 $$
-= \frac{\partial{T}}{\partial{t}} \approx 3\kappa\Big(\frac{T_{1} + T_{{-1}} - 2T_{0}}{(\Delta{r})^2}\Big) + S
+= \frac{\partial{T}}{\partial{t}} \approx 3\kappa\Big(\frac{T_{1} + T_{{-1}} - 2T_{0}}{(\Delta{r})^2}\Big) + S_{0}
 $$
 
 here $T_{-1}$ is a ghost point we can replace it with $T_{1}$ due to symmetry, $T_{-1} = T_{1}$
 
 $$
-\boxed{\frac{\partial{T}}{\partial{t}} \approx 3\kappa\Big(\frac{2T_{1} - 2T_{0}}{(\Delta{r})^2}\Big) + S \quad \text{for,} \quad r=0.}
+\boxed{\frac{\partial{T}}{\partial{t}} \approx 3\kappa\Big(\frac{2T_{1} - 2T_{0}}{(\Delta{r})^2}\Big) + S_{0} \quad \text{for,} \quad r=0.}
 $$
 
 ##### Center point ($i = N, r = R$)
@@ -329,22 +329,22 @@ $$
 now substitute first spatial derivative and second spatial derivative in heat equation,
 
 $$
-\frac{\partial{T}}{\partial{t}} = \Big[\frac{2\kappa}{r}\Big(\frac{e\sigma}{\kappa} (T_{surf}^{4} - T_{neb}^{4})\Big) + \kappa \Big(\frac{(\frac{{2(\Delta{r})}e\sigma}{\kappa} (T_{surf}^{4} - T_{neb}^{4}) + T_{N-1}) + T_{N-1} - 2T_{N}}{(\Delta{r})^2}\Big)\Big] + S
+\frac{\partial{T}}{\partial{t}} = \Big[\frac{2\kappa}{r}\Big(\frac{e\sigma}{\kappa} (T_{surf}^{4} - T_{neb}^{4})\Big) + \kappa \Big(\frac{(\frac{{2(\Delta{r})}e\sigma}{\kappa} (T_{surf}^{4} - T_{neb}^{4}) + T_{N-1}) + T_{N-1} - 2T_{N}}{(\Delta{r})^2}\Big)\Big] + S_{N}
 $$
 
 rearranging, 
 
 $$
-\boxed{\frac{dT}{dt} = 2 \Big[ \frac{\kappa(T_{N-1} - T_{N})}{(\Delta{r})^2} + e \sigma (T_{surf}^{4} - T_{neb}^{4})\Big(\frac{1}{\Delta{r}} + \frac{1}{R}  \Big) \Big] + S \quad \text{for,} \quad r=R.}
+\boxed{\frac{dT}{dt} = 2 \Big[ \frac{\kappa(T_{N-1} - T_{N})}{(\Delta{r})^2} + e \sigma (T_{surf}^{4} - T_{neb}^{4})\Big(\frac{1}{\Delta{r}} + \frac{1}{R}  \Big) \Big] + S_{N} \quad \text{for,} \quad r=R.}
 $$
 
-
+So the final equation will be,
 
 $$
-f(x) = 
+\boxed{\frac{dT_{i}}{dt} = 
 \begin{cases}
-x^2 & \text{if } x > 0 \\
-0 & \text{if } x = 0 \\
--x & \text{if } x < 0
-\end{cases}
+3\kappa\Big(\frac{2T_{1} - 2T_{0}}{(\Delta{r})^2}\Big) + S_{0} & \text{if } r = 0 \\
+\kappa \Big[\frac{T_{i+1} + T_{i-1} - 2T_{i}}{(\Delta{r})^{2}} + \frac{2}{r_{i}}\Big(\frac{T_{i+1} - T_{i - 1}}{2(\Delta{r})}\Big)\Big] + S_{i} & \text{if } 0 < r < R \\
+2 \Big[ \frac{\kappa(T_{N-1} - T_{N})}{(\Delta{r})^2} + e \sigma (T_{surf}^{4} - T_{neb}^{4})\Big(\frac{1}{\Delta{r}} + \frac{1}{R}  \Big) \Big] + S_{N} & \text{if } r = R
+\end{cases}}
 $$
