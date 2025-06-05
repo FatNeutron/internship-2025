@@ -230,7 +230,7 @@ $$
 $$
 
 
-###### Center point ($i = 0, r = 0$)
+##### Center point ($i = 0, r = 0$)
 
 
 Since our heat equation is,
