@@ -8,9 +8,9 @@
 **Things to do:** 
 
 - [x] read thesis by Shehzade Manzoor Khan.
-	- [ ] learn the methods used.
+	- [x] learn the methods used.
 		- [x] Crank-Nicolson method.
-		- [ ] Method of lines.
+		- [x] Method of lines.
 - [ ] read paper by Amitabha Ghosh.
 - [ ] Write code for modelling thermal evolution.
 
@@ -194,3 +194,13 @@ This equations can be defined in tridigonal linear system,
 $$AT^{n+1} = BT^{n} + C$$
 
 which further can be solved some algorithms like Thomas algorithm.
+
+---------------
+We will not use the crank-nicolson method, it uses explicit terms which can be unstable when solving, we will be using **Method of lines** which uses implicit terms which is stable.
+And also crank-nicolos method uses fixed $\Delta{t}$ where MOL uses adaptive $\Delta{t}$ which is helpful when large scale modelling.
+
+--------------------
+
+
+### Method of line
+
