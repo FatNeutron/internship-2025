@@ -172,9 +172,7 @@ $$\frac{T_{i}^{n+1} - T_{i}^{n}}{\Delta{t}} = \kappa \Big(\frac{\text{(Spatial t
 Substituting terms in this equation for spatial terms,
 
 $$
-
-
-\frac{T_{i}^{n+1} - T_{i}^{n}}{\Delta{t}} = \kappa \Big[ \frac{\frac{2}{r_{i}}\Big(\frac{T_{i+1}^{n} - T_{i-1}^{n}}{2\Delta{r}} \Big) + \Big( \frac{T_{i+1}^{n} +T_{i-1}^{n} - 2T_{i}^{n}}{(\Delta{r})^2}\Big) + \frac{2}{r_{i}}\Big(\frac{T_{i+1}^{n+1} - T_{i-1}^{n+1}}{2\Delta{r}} \Big) + \Big( \frac{T_{i+1}^{n+1} +T_{i-1}^{n+1} - 2T_{i}^{n+1}}{(\Delta{r})^2}\Big)}{2}  \Big] + S
+\frac{T_{i}^{n+1} - T_{i}^{n}}{\Delta{t}} = \kappa \Big[ \frac{\frac{2}{r_{i}}\Big(\frac{T_{i+1}^{n} - T_{i-1}^{n}}{2\Delta{r}} \Big) + \Big( \frac{T_{i+1}^{n} +T_{i-1}^{n} - 2T_{i}^{n}}{(\Delta{r})^2}\Big) + \frac{2}{r_{i}}\Big(\frac{T_{i+1}^{n+1} - T_{i-1}^{n+1}}{2\Delta{r}} \Big) + \Big( \frac{T_{i+1}^{n+1} +T_{i-1}^{n+1} - 2T_{i}^{n+1}}{(\Delta{r})^2}\Big)}{2} \Big] + S
 $$
 
 $$
