@@ -289,7 +289,9 @@ $$
 here we consider the heat loss from surface is due to radiative boundary condition, which is given as,
 
 
-$$\frac{\partial{T}}{\partial{r}}\Big|_{r = 0} = \frac{e\sigma}{\kappa} (T_{surf}^{4} - T_{neb}^{4})$$
+$$
+\frac{\partial{T}}{\partial{r}}\Big|_{r = 0} = 0
+$$
 
 
 where,
