@@ -284,12 +284,12 @@ $$
 \boxed{\frac{\partial{T}}{\partial{t}} \approx 3\kappa\Big(\frac{2T_{1} - 2T_{0}}{(\Delta{r})^2}\Big) + S_{0} \quad \text{for,} \quad r=0.}
 $$
 
-##### Center point ($i = N, r = R$)
+##### Surface point ($i = N, r = R$)
 
 here we consider the heat loss from surface is due to radiative boundary condition, which is given as,
 
 $$
-\frac{dT}{dr}\Big|_{r = R} = \frac{e\sigma}{\kappa} (T_{surf}^{4} - T_{neb}^{4})
+\frac{dT}{dr} \Big|_{r = R} = \frac{e \sigma}{\kappa} (T_{surf}^{4} - T_{neb}^{4})
 $$
 
 where,
