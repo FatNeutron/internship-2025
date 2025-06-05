@@ -213,18 +213,23 @@ We partition the spatial domain into $(N)$ intervals of width $(\Delta{r} = \fra
 $$
 r_{i} = i(\Delta{r}), \quad i = 0,1,2,\dots,N.
 $$
+
 $i = 0$ -> center
 $i = N$ -> surface
 
 then the equation becomes,
+
 $$
 \frac{dT_{i}}{dt} = f_{i}(T_{0}, T_{1}, \dots, T_{N}) \quad for \quad i=0,1,2,\dots,N.
 $$
 
 We discretize the spatial terms with central difference and backward difference equation and substitute in the 1D heat equation, then we have,
+
 $$
 \boxed{\frac{dT_{i}}{dt} = \kappa \Big[\frac{T_{i+1} + T_{i-1} - 2T_{i}}{(\Delta{r})^{2}} + \frac{2}{r_{i}}\Big(\frac{T_{i+1} - T_{i - 1}}{2(\Delta{r})}\Big)\Big] + S_{i}} \quad for \quad i=[1,N-1]
 $$
+
+
 ###### Center point ($i = 0, r = 0$)
 
 
@@ -233,8 +238,10 @@ Since our heat equation is,
 $$
 \frac{\partial{T}}{\partial{t}} = \Big(\frac{2\kappa}{r}\frac{\partial{T}}{\partial{r}} + \kappa \frac{\partial^2{T}}{\partial{r^2}}\Big) + S
 $$
+
 and at $r = 0$ first spatial derivative term is undefined.
 so we need to take limit,
+
 $$
 \lim_{r \to 0} \frac{1}{r}{\frac{\partial{T}}{\partial{r}}}
 $$
@@ -244,6 +251,7 @@ for $r = 0$, which is at the center of body we assume that there is no heat flux
 $$
 \frac{\partial{T}}{\partial{r}}\Big|_{r = 0} = 0
 $$
+
 So we can use L'Hôpital's rule to this form, 
 
 $$
@@ -251,6 +259,7 @@ $$
 $$
 
 So,
+
 $$
 \lim_{r \to 0} \frac{\frac{\partial{T}}{\partial{r}}}{r} = \frac{\frac{d}{dr}(\frac{\partial{T}}{\partial{r}}) }{\frac{d}{dr}(r)} = \frac{\frac{\partial^2{T}}{\partial{r^2}}}{1} = \frac{\partial^2{T}}{\partial{r^2}}
 $$
@@ -260,6 +269,7 @@ Substitute this term back in heat equation,
 $$
 \frac{\partial{T}}{\partial{t}} = \Big(2\kappa\frac{\partial^2{T}}{\partial{r^2}} + \kappa \frac{\partial^2{T}}{\partial{r^2}}\Big) + S
 $$
+
 $$
 = \frac{\partial{T}}{\partial{t}} = \Big(3\kappa\frac{\partial^2{T}}{\partial{r^2}}\Big) + S
 $$
@@ -267,6 +277,7 @@ $$
 $$
 = \frac{\partial{T}}{\partial{t}} \approx 3\kappa\Big(\frac{T_{1} + T_{{-1}} - 2T_{0}}{(\Delta{r})^2}\Big) + S
 $$
+
 here $T_{-1}$ is a ghost point we can replace it with $T_{1}$ due to symmetry, $T_{-1} = T_{1}$
 
 $$
