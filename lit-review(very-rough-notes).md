@@ -174,19 +174,19 @@ Substituting terms in this equation for spatial terms,
 $$
 \begin{gather*}
 
-\frac{T^{n+1}_{i} - T^{n}_{i}}{\Delta{t}} = \kappa \Big[ \frac{\frac{2}{r_{i}}\Big(\frac{T^{n}_{i+1} - T^{n}_{i-1}}{2\Delta{r}} \Big) + \Big( \frac{T^{n}_{i+1} +T^{n}_{i-1} - 2T^{n}_{i}}{(\Delta{r})^2}\Big) + \frac{2}{r_{i}}\Big(\frac{T^{n+1}_{i+1} - T^{n+1}_{i-1}}{2\Delta{r}} \Big) + \Big( \frac{T^{n+1}_{i+1} +T^{n+1}_{i-1} - 2T^{n+1}_{i}}{(\Delta{r})^2}\Big)}{2}  \Big] + S
+\frac{T_{i}^{n+1} - T_{i}^{n}}{\Delta{t}} = \kappa \Big[ \frac{\frac{2}{r_{i}}\Big(\frac{T_{i+1}^{n} - T_{i-1}^{n}}{2\Delta{r}} \Big) + \Big( \frac{T_{i+1}^{n} +T_{i-1}^{n} - 2T_{i}^{n}}{(\Delta{r})^2}\Big) + \frac{2}{r_{i}}\Big(\frac{T_{i+1}^{n+1} - T_{i-1}^{n+1}}{2\Delta{r}} \Big) + \Big( \frac{T_{i+1}^{n+1} +T_{i-1}^{n+1} - 2T_{i}^{n+1}}{(\Delta{r})^2}\Big)}{2}  \Big] + S
 \\\\
 
-T^{n+1}_{i} - T^{n}_{i} = \Delta{t} \kappa \Big[ \frac{\frac{2}{r_{i}}\Big(\frac{T^{n}_{i+1} - T^{n}_{i-1}}{2\Delta{r}} \Big) + \Big( \frac{T^{n}_{i+1} +T^{n}_{i-1} - 2T^{n}_{i}}{(\Delta{r})^2}\Big) + \frac{2}{r_{i}}\Big(\frac{T^{n+1}_{i+1} - T^{n+1}_{i-1}}{2\Delta{r}} \Big) + \Big( \frac{T^{n+1}_{i+1} +T^{n+1}_{i-1} - 2T^{n+1}_{i}}{(\Delta{r})^2}\Big)}{2}  \Big] + S\Delta{t}
+T_{i}^{n+1} - T_{i}^{n} = \Delta{t} \kappa \Big[ \frac{\frac{2}{r_{i}}\Big(\frac{T_{i+1}^{n} - T_{i-1}^{n}}{2\Delta{r}} \Big) + \Big( \frac{T_{i+1}^{n} +T_{i-1}^{n} - 2T_{i}^{n}}{(\Delta{r})^2}\Big) + \frac{2}{r_{i}}\Big(\frac{T_{i+1}^{n+1} - T_{i-1}^{n+1}}{2\Delta{r}} \Big) + \Big( \frac{T_{i+1}^{n+1} +T_{i-1}^{n+1} - 2T_{i}^{n+1}}{(\Delta{r})^2}\Big)}{2}  \Big] + S\Delta{t}
 \\\\
 
-T^{n+1}_{i} - T^{n}_{i} = \frac{\Delta{t} \kappa}{2r_{i}\Delta{r}} (T^{n}_{i+1} - T^{n}_{i-1}) + \frac{\Delta{t} \kappa}{2(\Delta{r})^{2}}(T^{n}_{i+1} + T^{n}_{i-1} -2T^{n}_{i}) + \frac{\Delta{t} \kappa}{2r_{i}\Delta{r}} (T^{n+1}_{i+1} - T^{n+1}_{i-1}) + \frac{\Delta{t} \kappa}{2(\Delta{r})^{2}}(T^{n+1}_{i+1} + T^{n+1}_{i-1} -2T^{n+1}_{i} + S\Delta{t}
+T_{i}^{n+1} - T_{i}^{n} = \frac{\Delta{t} \kappa}{2r_{i}\Delta{r}} (T_{i+1}^{n} - T_{i-1}^{n}) + \frac{\Delta{t} \kappa}{2(\Delta{r})^{2}}(T_{i+1}^{n} + T_{i-1}^{n} -2T_{i}^{n}) + \frac{\Delta{t} \kappa}{2r_{i}\Delta{r}} (T_{i+1}^{n+1} - T_{i-1}^{n+1}) + \frac{\Delta{t} \kappa}{2(\Delta{r})^{2}}(T_{i+1}^{n+1} + T_{i-1}^{n+1} -2T_{i}^{n+1} + S\Delta{t}
 \\\\
 
 \text{let,} \quad \alpha = \frac{\Delta{t} \kappa}{2(\Delta{r})^2}, \quad \text{and} \quad \beta_{i} = \frac{\Delta{t} \kappa}{2r_{i} \Delta{r}}
 \\\\
 
-\boxed{T^{n+1}_{i}(1 + 2 \alpha) + T^{n+1}_{i+1}(- \alpha - \beta_{i}) + T^{n+1}_{i-1}(\beta_{i} - \alpha) = T^{n}_{i}(1 - 2 \alpha) + T^{n}_{i+1}(\alpha + \beta_{i}) + T^{n}_{i-1}(\alpha - \beta_{i}) + S\Delta{t}}
+\boxed{T_{i}^{n+1}(1 + 2 \alpha) + T_{i+1}^{n+1}(- \alpha - \beta_{i}) + T_{i-1}^{n+1}(\beta_{i} - \alpha) = T_{i}^{n}(1 - 2 \alpha) + T_{i+1}^{n}(\alpha + \beta_{i}) + T_{i-1}^{n}(\alpha - \beta_{i}) + S\Delta{t}}
 \end{gather*}
 $$
 
