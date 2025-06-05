@@ -119,7 +119,7 @@ We have our heat equation as,
 
 $$\frac{\partial{T}}{\partial{t}} = \frac{1}{R^{2}}\frac{\partial}{\partial{R}}\Big(R^{2} \kappa \frac{\partial{T}}{\partial{R}}\Big) + \frac{Q_{rad}}{\rho c_{v}}$$
 
-Let,$\quad S = \frac{Q_{rad}}{\rho c_{v}}$
+Let,   $\quad S = \frac{Q_{rad}}{\rho c_{v}}$
 
 $$\boxed{\frac{\partial{T}}{\partial{t}} = \Big(\frac{2\kappa}{R}\frac{\partial{T}}{\partial{r}} + \kappa \frac{\partial^2{T}}{\partial{r^2}}\Big) + S}$$
 
