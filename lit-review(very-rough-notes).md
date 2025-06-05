@@ -283,3 +283,51 @@ here $T_{-1}$ is a ghost point we can replace it with $T_{1}$ due to symmetry, $
 $$
 \boxed{\frac{\partial{T}}{\partial{t}} \approx 3\kappa\Big(\frac{2T_{1} - 2T_{0}}{(\Delta{r})^2}\Big) + S \quad \text{for,} \quad r=0.}
 $$
+
+##### Center point ($i = N, r = R$)
+
+here we consider the heat loss from surface is due to radiative boundary condition, which is given as,
+
+$$
+\frac{dT}{dr}\Big|_{r = R} = \frac{e\sigma}{\kappa} (T_{surf}^{4} - T_{neb}^{4})
+$$
+
+where,
+
+| **Symbol** | **Meaning**                                  |
+| ---------- | -------------------------------------------- |
+| $T_{surf}$ | Temperature at surface                       |
+| $T_{neb}$  | Temperature of surrounding nebula (constant) |
+| $\sigma$   | Stefan-Boltzmann constant                    |
+| $e$        | Emissivity                                   |
+we can rewrite the equation as,
+
+$$
+\frac{T_{N+1} - T_{N-1}}{2(\Delta{r})} = \frac{e\sigma}{\kappa} (T_{surf}^{4} - T_{neb}^{4})
+$$
+
+here $T_{N+1}$ is ghost point.
+
+rearranging equation, 
+
+$$
+T_{N+1} = \frac{{2(\Delta{r})}e\sigma}{\kappa} (T_{surf}^{4} - T_{neb}^{4}) + T_{N-1}
+$$
+
+we know that,
+
+$$
+\frac{\partial^2{T}}{\partial{r^2}} = \frac{T_{N+1} + T_{N-1} - 2T_{N}}{(\Delta{r})^2} \quad \text{for,} \quad r = R \quad \text{or} \quad i = N.
+$$
+
+Substitute the term for $T_{N+1}$ in this equation,
+
+$$
+\frac{\partial^2{T}}{\partial{r^2}} = \frac{(\frac{{2(\Delta{r})}e\sigma}{\kappa} (T_{surf}^{4} - T_{neb}^{4}) + T_{N-1}) + T_{N-1} - 2T_{N}}{(\Delta{r})^2}
+$$
+
+now substitute first spatial derivative and second spatial derivative in heat equation,
+
+$$
+\frac{\partial{T}}{\partial{t}} = \Big[\frac{2\kappa}{r}\Big(\frac{e\sigma}{\kappa} (T_{surf}^{4} - T_{neb}^{4})\Big) + \kappa \Big(\frac{(\frac{{2(\Delta{r})}e\sigma}{\kappa} (T_{surf}^{4} - T_{neb}^{4}) + T_{N-1}) + T_{N-1} - 2T_{N}}{(\Delta{r})^2}\Big)\Big] + S
+$$
