@@ -331,3 +331,10 @@ now substitute first spatial derivative and second spatial derivative in heat eq
 $$
 \frac{\partial{T}}{\partial{t}} = \Big[\frac{2\kappa}{r}\Big(\frac{e\sigma}{\kappa} (T_{surf}^{4} - T_{neb}^{4})\Big) + \kappa \Big(\frac{(\frac{{2(\Delta{r})}e\sigma}{\kappa} (T_{surf}^{4} - T_{neb}^{4}) + T_{N-1}) + T_{N-1} - 2T_{N}}{(\Delta{r})^2}\Big)\Big] + S
 $$
+
+rearranging, 
+
+$$
+\boxed{\frac{dT}{dt} = 2 \Big[ \frac{\kappa(T_{N-1} - T_{N})}{(\Delta{r})^2} + e \sigma (T_{surf}^{4} - T_{neb}^{4})\Big(\frac{1}{\Delta{r}} + \frac{1}{R}  \Big) \Big] + S \quad \text{for,} \quad r=R.}
+$$
+
