@@ -144,11 +144,12 @@ $$
 > Note that here we $t^{n}$ doesn't mean t raised to $n$ th power. It is just an index notation like $r_{n}$.
 > For convenience we use superscript for index in time domain and subscript for index in spatial domain.
 
+#### Discretize the time derivative
 
 We need to approximate the time derivative by a forward difference:
 
 $$
-\frac{\partial{T}}{\partial{t}}(r_{i},t^{n}) \approx \frac{T^{n+1}_{i} - T^{n}_{i}}{\Delta{t}}
+\frac{\partial{T}}{\partial{t}}(r_{i},t^{n}) \approx \frac{T_{i}^{n+1} - T_{i}^{n}}{\Delta{t}}
 $$
 
 
