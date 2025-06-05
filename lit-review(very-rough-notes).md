@@ -1,5 +1,5 @@
 
-> [!NOTE]
+> [!warning]
 > This file was written in obsidian and synced through GitHub, so some format may not load properly!!!
 > 
 > **GitHub app** does not load the format properly!!!
@@ -338,3 +338,13 @@ $$
 \boxed{\frac{dT}{dt} = 2 \Big[ \frac{\kappa(T_{N-1} - T_{N})}{(\Delta{r})^2} + e \sigma (T_{surf}^{4} - T_{neb}^{4})\Big(\frac{1}{\Delta{r}} + \frac{1}{R}  \Big) \Big] + S \quad \text{for,} \quad r=R.}
 $$
 
+
+
+$$
+f(x) = 
+\begin{cases}
+x^2 & \text{if } x > 0 \\
+0 & \text{if } x = 0 \\
+-x & \text{if } x < 0
+\end{cases}
+$$
