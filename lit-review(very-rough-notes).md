@@ -288,9 +288,11 @@ $$
 
 here we consider the heat loss from surface is due to radiative boundary condition, which is given as,
 
+
 $$
-\frac{\partial{T}}{\partial{r}}\Big|_{r = R} = \frac{e\sigma}{\kappa} (T_{surf}^{4} - T_{neb}^{4})
+ \frac{\partial{T}}{\partial{r}}\Big|_{r = R} = \frac{e\sigma}{\kappa} (T_{surf}^{4} - T_{neb}^{4})
 $$
+
 
 where,
 
@@ -300,6 +302,7 @@ where,
 | $T_{neb}$  | Temperature of surrounding nebula (constant) |
 | $\sigma$   | Stefan-Boltzmann constant                    |
 | $e$        | Emissivity                                   |
+
 we can rewrite the equation as,
 
 $$
