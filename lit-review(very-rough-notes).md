@@ -217,12 +217,6 @@ $$
 $i = 0$ -> center
 $i = N$ -> surface
 
-then the equation becomes,
-
-$$
-\frac{dT_{i}}{dt} = f_{i}(T_{0}, T_{1}, \dots, T_{N}) \quad for \quad i=0,1,2,\dots,N.
-$$
-
 We discretize the spatial terms with central difference and backward difference equation and substitute in the 1D heat equation, then we have,
 
 $$
