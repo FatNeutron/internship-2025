@@ -344,3 +344,69 @@ $$
 \frac{dT}{dt} = 2\kappa \Big[ \frac{(T_{N-1} - T_{N})}{(\Delta{r})^2} + \frac{e \sigma (T_{surf}^{4} - T_{neb}^{4})}{\kappa_c}\Big(\frac{1}{\Delta{r}} + \frac{1}{R}  \Big) \Big] + S_{N} & \text{if } r = R
 \end{cases}}
 $$
+
+
+### Parameters
+
+
+| **Quantity** | **Symbol** | **Units** | **Formula** | **Value** | **Comment** |
+
+|------------------------------------------------------------|----------------------|--------------------|---------------------------------------------------------------------------------------------------------|---------------|-----------------------------------------|
+
+| **Radius** | $R$ | m | - | 27000 | |
+
+| **Compressional wave** | $V_{p}$ | Km/s | - | 7.61 | |
+
+| **Thermal diffusivity** | $\kappa$ | m$^{2}$ s$^{-1}$ | (-1.67 + 2.1*$V_{p}$) | 1.4311e-6 |For H-Chondrites taken from Yomogida and Matsui (1983) https://gupubs.onlinelibrary.wiley.com/doi/epdf/10.1029/JB088iB11p09513 |
+
+| **Emissivity** | $e$ | - | - | 0.8 | |
+
+| **Stefan-Boltzmann constant** | $\sigma$ | W m$^{-2}$ K$^{-4}$ | - | 5.67037442e-8 | |
+
+| **Initial temperature** | $T_{neb}$ | K | - | 292 | |
+
+| **Avogadro number** | $N_{A}$ | mol$^{-1}$ | - | 6.022e23 | |
+
+| **Density of H-chondrite** | $\rho$ | Kg m$^{-3}$ | - | 3500 | |
+
+| **Al abundance** | Al_abnds | % | - | 1.13 | |
+
+| **Ratio of $^{26}$Al** | $^{26}$Al / $^{27}$Al | - | - | 5e-5 | |
+
+| **Molar mass of Al** | M_Al | Kg mol$^{-1}$ | - | 0.026981538 | |
+
+| **Atom density of Al** | A_Al | atoms m$^{-3}$ | Al_abnds * $\rho$ * $^{26}$Al / $^{27}$Al * $N_{A}$ / M_Al | | |
+
+| **Fe abundance** | Fe_abnds | % | - | 24 | |
+
+| **Ratio of $^{60}$Al** | $^{60}$Fe / $^{56}$Fe | - | - | 1e-8 | |
+
+| **Molar mass of Fe** | M_Fe | Kg mol$^{-1}$ | - | 0.0.05584 | |
+
+| **Atom density of Fe** | A_Fe | atoms m$^{-3}$ | Fe_abnds * $\rho$ * $^{60}$Fe / $^{56}$Fe * $N_{A}$ / M_Fe | | |
+
+| **Half life of $^{26}$Al** | $t_{0.5, Al}$ | Myr | - | 0.72 | |
+
+| **Half life of $^{60}$Fe** | $t_{0.5, Fe}$ | Myr | - | 1.5 | |
+
+| **Energy release per atom of Al** | $Q_{Al}$ | J | - | 3 * 1.60218e-13 | |
+
+| **Energy release per atom of Fe** | $Q_{Fe}$ | J | - | 3 * 1.60218e-13 | |
+
+| **Decay constant of Al** | $\lambda_{Al}$ | s$^{-1}$ | $\log(2) / t_{0.5, Al}$ | | |
+
+| **Decay constant of Fe** | $\lambda_{Fe}$ | s$^{-1}$ | $\log(2) / t_{0.5, Fe}$ | | |
+
+| **Thermal expansivity of olivine** | $\alpha$ | K$^{-1}$ | - | 3.8e-5 | |
+
+| **Compressibility** | $\beta$ | Pa$^{-1}$ | - | 1.82e-6 | |
+
+| **Molar volume of Fayalite** | $V_{m, Fa}$ | m$^{3}$ mol$^{-1}$ | - | 46.39e-6 | https://pubs.usgs.gov/bul/1452/report.pdf |
+
+| **Specific heat capacity at constant pressure for Fayalite** | $c_{p}$ | J K$^{-1}$ | $172.76 - 3.4055*10^{-3}*(T) + 2.2411*10^{-5}*(T^{2}) - 3.6299*10^{6}*(T^{-2})$ | | https://pubs.usgs.gov/bul/1452/report.pdf |
+
+| **Specific heat capacity at volume for Fayalite** | $c_{v}$ | J K$^{-1}$ | $c_{p} - (T*V_{m, Fa}*\alpha^{2} * \beta^{-1})$ | | |
+
+| **Heating rate per unit volume** | $Q_{rad}$ | W m$^{-3}$ | $(A_{Al} * \lambda_{Al} * Q_{Al} * e^{-\lambda_{Al} * t}) + (A_{Fe} * \lambda_{Fe} * Q_{Fe} * e^{-\lambda_{Fe} * t})$ | - | |
+
+| **Source term** | $S$ | K s$^{-1}$ Kg$^{-1}$ | $Q_{rad} / (\rho * c_{v}$) | | |
