@@ -294,11 +294,12 @@ where,
 | $T_{neb}$  | Temperature of surrounding nebula (constant) |
 | $\sigma$   | Stefan-Boltzmann constant                    |
 | $e$        | Emissivity                                   |
+| $\kappa_c$ | Thermal conductivity                         |
 
 we can rewrite the equation as,
 
 $$
-\frac{T_{N+1} - T_{N-1}}{2(\Delta{r})} = \frac{e\sigma}{\kappa} (T_{surf}^{4} - T_{neb}^{4})
+\frac{T_{N+1} - T_{N-1}}{2(\Delta{r})} = \frac{e\sigma}{\kappa_c} (T_{surf}^{4} - T_{neb}^{4})
 $$
 
 here $T_{N+1}$ is ghost point.
@@ -306,7 +307,7 @@ here $T_{N+1}$ is ghost point.
 rearranging equation, 
 
 $$
-T_{N+1} = \frac{{2(\Delta{r})}e\sigma}{\kappa} (T_{surf}^{4} - T_{neb}^{4}) + T_{N-1}
+T_{N+1} = \frac{{2(\Delta{r})}e\sigma}{\kappa_c} (T_{surf}^{4} - T_{neb}^{4}) + T_{N-1}
 $$
 
 we know that,
@@ -318,19 +319,19 @@ $$
 Substitute the term for $T_{N+1}$ in this equation,
 
 $$
-\frac{\partial^2{T}}{\partial{r^2}} = \frac{(\frac{{2(\Delta{r})}e\sigma}{\kappa} (T_{surf}^{4} - T_{neb}^{4}) + T_{N-1}) + T_{N-1} - 2T_{N}}{(\Delta{r})^2}
+\frac{\partial^2{T}}{\partial{r^2}} = \frac{(\frac{{2(\Delta{r})}e\sigma}{\kappa_c} (T_{surf}^{4} - T_{neb}^{4}) + T_{N-1}) + T_{N-1} - 2T_{N}}{(\Delta{r})^2}
 $$
 
 now substitute first spatial derivative and second spatial derivative in heat equation,
 
 $$
-\frac{\partial{T}}{\partial{t}} = \Big[\frac{2\kappa}{r}\Big(\frac{e\sigma}{\kappa} (T_{surf}^{4} - T_{neb}^{4})\Big) + \kappa \Big(\frac{(\frac{{2(\Delta{r})}e\sigma}{\kappa} (T_{surf}^{4} - T_{neb}^{4}) + T_{N-1}) + T_{N-1} - 2T_{N}}{(\Delta{r})^2}\Big)\Big] + S_{N}
+\frac{\partial{T}}{\partial{t}} = \Big[\frac{2\kappa}{r}\Big(\frac{e\sigma}{\kappa_c} (T_{surf}^{4} - T_{neb}^{4})\Big) + \kappa \Big(\frac{(\frac{{2(\Delta{r})}e\sigma}{\kappa_c} (T_{surf}^{4} - T_{neb}^{4}) + T_{N-1}) + T_{N-1} - 2T_{N}}{(\Delta{r})^2}\Big)\Big] + S_{N}
 $$
 
 rearranging, 
 
 $$
-\boxed{\frac{dT}{dt} = 2 \Big[ \frac{\kappa(T_{N-1} - T_{N})}{(\Delta{r})^2} + e \sigma (T_{surf}^{4} - T_{neb}^{4})\Big(\frac{1}{\Delta{r}} + \frac{1}{R}  \Big) \Big] + S_{N} \quad \text{for,} \quad r=R.}
+\boxed{\frac{dT}{dt} = 2\kappa \Big[ \frac{(T_{N-1} - T_{N})}{(\Delta{r})^2} + \frac{e \sigma (T_{surf}^{4} - T_{neb}^{4})}{\kappa_c}\Big(\frac{1}{\Delta{r}} + \frac{1}{R}  \Big) \Big] + S_{N} \quad \text{for,} \quad r=R.}
 $$
 
 So the final equation will be,
@@ -340,6 +341,6 @@ $$
 \begin{cases}
 3\kappa\Big(\frac{2T_{1} - 2T_{0}}{(\Delta{r})^2}\Big) + S_{0} & \text{if } r = 0 \\
 \kappa \Big[\frac{T_{i+1} + T_{i-1} - 2T_{i}}{(\Delta{r})^{2}} + \frac{2}{r_{i}}\Big(\frac{T_{i+1} - T_{i - 1}}{2(\Delta{r})}\Big)\Big] + S_{i} & \text{if } 0 < r < R \\
-2 \Big[ \frac{\kappa(T_{N-1} - T_{N})}{(\Delta{r})^2} + e \sigma (T_{surf}^{4} - T_{neb}^{4})\Big(\frac{1}{\Delta{r}} + \frac{1}{R}  \Big) \Big] + S_{N} & \text{if } r = R
+\frac{dT}{dt} = 2\kappa \Big[ \frac{(T_{N-1} - T_{N})}{(\Delta{r})^2} + \frac{e \sigma (T_{surf}^{4} - T_{neb}^{4})}{\kappa_c}\Big(\frac{1}{\Delta{r}} + \frac{1}{R}  \Big) \Big] + S_{N} & \text{if } r = R
 \end{cases}}
 $$
