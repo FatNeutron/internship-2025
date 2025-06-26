@@ -283,7 +283,7 @@ $$
 here we consider the heat loss from surface is due to radiative boundary condition, which is given as,
 
 $$
-\frac{dT_{N}}{dr} = \frac{e\sigma}{\kappa} (T_{surf}^{4} - T_{neb}^{4})
+\frac{dT_{N}}{dr} = \frac{e\sigma}{\kappa_c} (T_{surf}^{4} - T_{neb}^{4})
 $$
 
 where,
