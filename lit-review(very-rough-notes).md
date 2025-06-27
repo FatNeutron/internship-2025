@@ -380,6 +380,8 @@ $$
 | Specific heat capacity at volume (Fayalite)                | $c_v$                 | J K$^{-1}$           | $c_p - (T \cdot V_{m,\text{Fa}} \cdot \alpha^2 / \beta)$                                                  |                 | [1]                                                                   |
 | Heating rate per unit volume                               | $Q_{\text{rad}}$      | W m$^{-3}$           | $A_{\text{Al}} \lambda_{\text{Al}} Q_{\text{Al}} e^{-\lambda_{\text{Al}} t} + A_{\text{Fe}} \lambda_{\text{Fe}} Q_{\text{Fe}} e^{-\lambda_{\text{Fe}} t}$ | -               | Calculated                                                              |
 | Source term                                                | $S$                   | K s$^{-1}$ kg$^{-1}$ | $Q_{\text{rad}} / (\rho \cdot c_v)$                                                                      |                 | [1]                                                                   |
+
+
 [1] A Thermal Model for the Differentiation of Asteroid 4 Vesta, Based on Radiogenic Heating — Amitabha Ghosh & Harry Y. McSween, Jr.
 
 [2] Yomogida, K. & Matsui, T. (1983). *Physical properties of ordinary chondrites*, Journal of Geophysical Research: Solid Earth, 88(B11), 9513–9533. [https://doi.org/10.1029/JB088iB11p09513](https://doi.org/10.1029/JB088iB11p09513)
