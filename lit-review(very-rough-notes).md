@@ -346,7 +346,7 @@ $$
 $$
 
 
-### Parameters
+### Parameters (Stage 1)
 
 
 | **Quantity**                                           | **Symbol**                   | **Units**  | **Formula**                                                                                       | **Value**                         | **Comment**          |
