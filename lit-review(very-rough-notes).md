@@ -395,6 +395,49 @@ $$
 
 
 
+###### parameters
+
+
+
+| **Quantity**                                           | **Symbol**                          | **Units(MOL)**               | **Value(MOL)**                    | **Units(CN)**                | **Value(CN)**                     |
+| :----------------------------------------------------- | :---------------------------------- | :--------------------------- | :-------------------------------- | :--------------------------- | :-------------------------------- |
+| Compressional wave                                     | $V_p$                               | km/s                         | 7.61                              | -                            | -                                 |
+| Thermal diffusivity                                    | $\kappa$                            | m²/yr                        | 45.16208136                       | -                            | -                                 |
+| Thermal Conductivity                                   | k                                   | $W m^{-1} K^{-1}$            | varying [~17.2, ~30.72]           | $W m^{-1} K^{-1}$            | 1199.1888                         |
+| Emissivity                                             | $e$                                 | -                            | 0.8                               | -                            | 0.8                               |
+| Stefan–Boltzmann constant                              | $\sigma$                            | W·m⁻²·K⁻⁴                    | 5.67037442e−8                     | W·m⁻²·K⁻⁴                    | 5.67037442e−8                     |
+| Initial temperature                                    | $T_{neb}$                           | K                            | 292                               | K                            | 292                               |
+| Avogadro number                                        | $N_A$                               | mol⁻¹                        | $6.022 \times 10^{23}$            | mol⁻¹                        | $6.022 \times 10^{23}$            |
+| Density of H-chondrite                                 | $\rho$                              | kg·m⁻³                       | 3500                              | kg·m⁻³                       | 3500                              |
+| Al abundance                                           | $Al_{abnds}$                        | %                            | 1.13                              | %                            | 1.13                              |
+| Ratio of $^{26}\text{Al}$                              | $^{26}\text{Al}$ / $^{27}\text{Al}$ | -                            | $5 \times 10^{-5}$                | -                            | $5 \times 10^{-5}$                |
+| Molar mass of Al                                       | $M_{Al}$                            | kg·mol⁻¹                     | 0.026981538                       | kg·mol⁻¹                     | 0.027                             |
+| Atom density of Al                                     | $A_{Al}$                            | atoms·m⁻³                    | $4.413575 \times 10^{22}$         | atoms·m⁻³                    | $4.410557 \times 10^{22}$         |
+| Fe abundance                                           | $Fe_{abnds}$                        | %                            | 24                                | %                            | 24                                |
+| Ratio of $^{20}\text{Fe}$                              | $^{60}\text{Fe}$ / $^{56}\text{Fe}$ | -                            | $1 \times 10^{-8}$                | -                            | $1 \times 10^{-8}$                |
+| Molar mass of Fe                                       | $M_{Fe}$                            | kg·mol⁻¹                     | 0.05584                           | kg·mol⁻¹                     | 0.056                             |
+| Atom density of Fe                                     | $A_{Fe}$                            | atoms·m⁻³                    | $9.058882 \times 10^{19}$         | atoms·m⁻³                    | $9.033 \times 10^{19}$            |
+| Half life of $^{26}\text{Al}$                          | $t_{0.5,Al}$                        | Myr                          | 0.72                              | Myr                          | 0.72                              |
+| Half life of $^{60}\text{Fe}$                          | $t_{0.5,Fe}$                        | Myr                          | 1.5                               | Myr                          | 1.5                               |
+| Energy per atom of Al                                  | $Q_{Al}$                            | J                            | $3 \cdot 1.60218 \times 10^{-13}$ | J                            | $3 \cdot 1.60218 \times 10^{-13}$ |
+| Energy per atom of Fe                                  | $Q_{Fe}$                            | J                            | $3 \cdot 1.60218 \times 10^{-13}$ | J                            | $3 \cdot 1.60218 \times 10^{-13}$ |
+| Decay constant of Al                                   | $\lambda_{Al}$                      | ye⁻¹                         | $9.627044 \times 10^{-7}$         | yr⁻¹                         | $9.627044 \times 10^{-7}$         |
+| Decay constant of Fe                                   | $\lambda_{Fe}$                      | yr⁻¹                         | $4.620781 \times 10^{-7}$         | yr⁻¹                         | $4.620781 \times 10^{-7}$         |
+| Thermal expansivity of olivine                         | $\alpha$                            | K⁻¹                          | $3.8 \times 10^{-5}$              | K⁻¹                          | $3.8 \times 10^{-5}$              |
+| Compressibility                                        | $\beta$                             | Pa⁻¹                         | $1.82 \times 10^{-6}$             | Pa⁻¹                         | $1.82 \times 10^{-6}$             |
+| Molar volume of Fayalite                               | $V_{m,Fa}$                          | m³/mol                       | $46.39 \times 10^{-6}$            | -                            | -                                 |
+| Specific heat capacity at constant pressure (Fayalite) | $c_p$                               | $J\cdot K^{-1}\cdot kg^{-1}$ | varying [~700,~1250]              | $J\cdot K^{-1}\cdot kg^{-1}$ | 2100                              |
+| Specific heat capacity at volume (Fayalite)            | $c_v$                               | $J\cdot K^{-1}\cdot kg^{-1}$ | varying [~700,~1250]              | $J\cdot K^{-1}\cdot kg^{-1}$ | 2100                              |
+| Heating                                                | $Q_{rad}$                           | W·m⁻³                        |                                   | J·m⁻³                        | -                                 |
+| Source term                                            | $S$                                 | K·s⁻¹·kg⁻¹                   | -                                 | K·kg⁻¹                       | -                                 |
+
+
+
+
+
+
+
+
 |                                 | **Crank–Nicolson (Code 1)**                                                                                                                                                                                                                                     | **Method of Lines (Code 2)**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | ------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Discretization Approach**     | Fully implicit finite difference (CN) in time and space                                                                                                                                                                                                         | Semi-discrete: finite difference in space, ODE in time integrated using solve_ivp                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
@@ -424,3 +467,8 @@ A\cdot T^{n+1} = B\cdot T^{n} + C
 $$
 
 A, B and C are tridiagonal matrix
+
+
+
+
+
