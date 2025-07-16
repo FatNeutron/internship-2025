@@ -69,7 +69,7 @@ Heat released from $^{26}\text{Al}$ decay was enough for partial to extensive me
 
 
 ##### 3D heat equation:
-$$\frac{\partial T}{\partial t} = \frac{\kappa}{\rho c_v} \left[
+$$\frac{\partial T}{\partial t} = \kappa \left[
 \frac{1}{R^2} \frac{\partial}{\partial R} \left( R^2 \frac{\partial T}{\partial R} \right) + \frac{1}{R^2 \sin \theta} \frac{\partial}{\partial \theta} \left( \sin \theta \frac{\partial T}{\partial \theta} \right) + \frac{1}{R^2 \sin^2 \theta} \frac{\partial^2 T}{\partial \phi^2}\right] + \frac{Q_{\text{rad}}}{\rho c_v} $$
 
 For modelling we assume spherical symmetry, which means that there are no angular dependencies so the angular terms become 0.
